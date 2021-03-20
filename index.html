@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Line, Please!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=IM+Fell+English:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container outer">
+    <div class="row">
+      <div class="col-3 mt-0 btn-group-vertical" role="group" aria-label="Basic example">
+        <p class="current">Current Mode: Standard</p>
+        <button type="button" class="mt-1 lenient btn btn-primary">Lenient Mode</button>
+        <button type="button" class="mt-1 standard btn btn-info">Standard Mode</button>
+        <button type="button" class="mt-1 perfectionist btn btn-danger">Perfectionist Mode</button>
+        <span class="mt-3 masks material-icons" style="font-size: 50px; color:#5bc0de;">theater_comedy</span>
+      </div>
+      <div class="mt-1 col-sm main">
+        <h1 class="mt-1 header">Line, Please!</h1>
+        <div class="collapse show" id="collapse2">  </div>
+        <div class="collapse show" id="collapse1">
+          <textarea class="mt-3 form-control textDisplay" style="height: 200px;" placeholder="Enter your lines and then press 'Rehearse'!"></textarea>
+        </div>
+        <button class="mt-3 startOver btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><div class="dropdown-menu">
+    <a class="dropdown-item macbeth">Macbeth's Dagger</a>
+    <a class="dropdown-item romeo">Yonder Window</a>
+    <a class="dropdown-item richard">Winter of Discontent</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item ash">Pokémon Theme Song</a>
+  </div>Choose Monologue</button>
+        <button class="mt-3 quizMe btn btn-info" data-target="#collapse1"><span class="spinner-grow spinner-grow-sm m-1" role="status" aria-hidden="true" style="display: none;"></span>Rehearse</button>
+        <button class="mt-3 redo btn btn-info">Redo Line</button>
+        <button class="mt-3 startOver btn btn-info" onClick="window.location.href=window.location.href" disabled aria-disabled="true" >Enter New Lines</button>
+        <div class="mt-3 alert alert-info .alert-dismissible" role="alert">Test your memory.
+          Enter your lines and have your <span class="material-icons">mic</span>
+          ready to recite, line by line!</div>
+        <h2 class="mt-3 output"></h2>
+        <!-- <div class="progress">
+  <div class="progress-bar" role="progressbar"></div>
+</div> -->
+    </div>
+  </div>
+
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+  <script src="levenshtein.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

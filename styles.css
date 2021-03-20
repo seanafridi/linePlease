@@ -1,0 +1,40 @@
+body{
+  background-color: linen;
+  font-family: 'IM Fell Double Pica', serif;
+}
+
+div{
+  text-align: center;
+}
+
+.outer{
+  padding: 5%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn-group-vertical{
+  display: inline-block;
+  float: left;
+  width: 30%;
+}
+
+.main{
+  display: inline-block;
+}
+
+h1{
+    font-family: 'IM Fell English', serif;
+}
+
+mark{
+  background-color: rgba(0, 0, 0, .93);
+  padding: 0px;
+  margin: 10px 10px 10px 10px;
+  text-align:justify;
+  text-justify: inter-word;
+}
+
+mark:hover{
+    background-color:  rgba(0, 0, 0, .8);
+}
